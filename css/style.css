@@ -1,0 +1,364 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap");
+
+:root {
+    color-scheme: light;
+    --ink: #172a26;
+    --muted: #64736e;
+    --green: #147d64;
+    --green-dark: #0e604e;
+    --mint: #e5f4ed;
+    --paper: #ffffff;
+    --line: #e4ebe7;
+    --shadow: 0 18px 48px rgba(27, 58, 48, 0.08);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 1120px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 28px 28px 56px;
+    color: var(--ink);
+    background:
+        radial-gradient(ellipse at 12% 0%, rgba(201, 235, 217, 0.55), transparent 34rem),
+        #f5f8f6;
+    font-family: "DM Sans", "Segoe UI", sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+body > img {
+    display: block !important;
+    width: 76px;
+    height: 76px;
+    margin: 0 auto 18px;
+    padding: 7px;
+    border: 1px solid var(--line);
+    border-radius: 22px;
+    background: var(--paper);
+    box-shadow: 0 8px 24px rgba(27, 58, 48, 0.08);
+    object-fit: contain;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--ink);
+    font-family: "Manrope", "Segoe UI", sans-serif;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+h1 {
+    margin: 32px 0 14px;
+    font-size: clamp(2rem, 5vw, 3.4rem);
+    letter-spacing: -0.055em;
+}
+
+h2 {
+    margin: 30px 0 10px;
+    font-size: clamp(1.45rem, 3vw, 2rem);
+    letter-spacing: -0.035em;
+}
+
+h3 {
+    margin: 24px 0 8px;
+    font-size: 1.2rem;
+}
+
+p {
+    margin: 0 0 16px;
+    color: var(--muted);
+}
+
+nav {
+    position: sticky;
+    top: 12px;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    width: fit-content;
+    max-width: 100%;
+    margin: 0 auto 34px;
+    padding: 7px;
+    border: 1px solid rgba(228, 235, 231, 0.9);
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 10px 30px rgba(27, 58, 48, 0.07);
+    backdrop-filter: blur(14px);
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 42px;
+    padding: 8px 17px;
+    border-radius: 11px;
+    color: var(--muted);
+    font-size: 0.94rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 160ms ease, background 160ms ease, transform 160ms ease;
+}
+
+nav a:hover,
+nav a:focus-visible {
+    color: var(--green-dark);
+    background: var(--mint);
+    transform: translateY(-1px);
+}
+
+a {
+    color: var(--green-dark);
+    font-weight: 700;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+}
+
+a:hover {
+    color: var(--green);
+}
+
+body > p,
+body > ul,
+body > ol,
+body > dl,
+body > audio {
+    max-width: 800px;
+}
+
+body > ul,
+body > ol,
+body > dl {
+    margin-top: 20px;
+    margin-bottom: 24px;
+    padding: 22px 28px 22px 48px;
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    background: var(--paper);
+    box-shadow: var(--shadow);
+}
+
+li {
+    padding: 3px 0;
+}
+
+dt {
+    margin-top: 12px;
+    color: var(--green-dark);
+    font-weight: 800;
+}
+
+dd {
+    margin-left: 0;
+    color: var(--muted);
+}
+
+mark {
+    padding: 2px 6px;
+    border-radius: 5px;
+    color: var(--green-dark);
+    background: var(--mint);
+}
+
+main {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(230px, 0.34fr);
+    align-items: start;
+    gap: 24px;
+    margin: 0 auto;
+}
+
+main > section,
+main > article,
+main > aside,
+body > article,
+body > aside {
+    min-width: 0;
+    padding: clamp(22px, 4vw, 38px);
+    border: 1px solid var(--line);
+    border-radius: 24px;
+    background: var(--paper);
+    box-shadow: var(--shadow);
+}
+
+main > section,
+main > article {
+    grid-column: 1;
+}
+
+main > aside {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+}
+
+article h2,
+section h2 {
+    margin-top: 0;
+}
+
+figure {
+    margin: 22px 0;
+}
+
+figure img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 16px;
+}
+
+figcaption {
+    margin-top: 8px;
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+table {
+    width: 100%;
+    margin: 20px 0 32px;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 18px;
+    background: var(--paper);
+    box-shadow: var(--shadow);
+    text-align: left;
+}
+
+caption {
+    padding: 16px 18px;
+    color: var(--green-dark);
+    font-family: "Manrope", "Segoe UI", sans-serif;
+    font-size: 1.15rem;
+    font-weight: 800;
+    text-align: left;
+}
+
+th,
+td {
+    padding: 14px 18px;
+    border-bottom: 1px solid var(--line);
+}
+
+th {
+    color: var(--green-dark);
+    background: #edf7f1;
+    font-size: 0.84rem;
+    letter-spacing: 0.035em;
+    text-transform: uppercase;
+}
+
+tbody tr:nth-child(even) {
+    background: #f8fbf9;
+}
+
+tbody tr:hover {
+    background: var(--mint);
+}
+
+tfoot td {
+    border-bottom: 0;
+    color: var(--green-dark);
+    background: #edf7f1;
+    font-weight: 800;
+    text-align: center;
+}
+
+audio {
+    display: block;
+    width: min(100%, 520px);
+    margin: 24px 0;
+}
+
+header {
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+header > h1 {
+    margin-top: 8px;
+}
+
+header > p {
+    margin-bottom: 20px;
+}
+
+header > nav {
+    margin-bottom: 0;
+}
+
+footer {
+    margin-top: 36px;
+    padding: 18px 0 0;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 700px) {
+    body {
+        padding: 20px 16px 40px;
+    }
+
+    nav {
+        position: static;
+        width: 100%;
+        margin-bottom: 26px;
+    }
+
+    nav a {
+        min-height: 40px;
+        padding: 7px 12px;
+    }
+
+    main {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    main > section,
+    main > article,
+    main > aside {
+        grid-column: 1;
+        grid-row: auto;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+    }
+}
