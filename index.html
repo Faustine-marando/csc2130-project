@@ -1,32 +1,52 @@
-<!DOCTYPE html> 
-<html lang="en"> 
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="UTF-8"> 
-<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-<title>School Online Attendance Management system</title> 
-      <link rel="stylesheet" href="css/style.css">
-</head> 
-<body> 
-    <img src="images/KIbabii-Logo.png" alt="Kibabii University Logo">
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-<h1>Atendnce Management System</h1> 
-<p>Welcome to the schol attendance management system and mark your students attendance</p>
-<p>Hello, Iam Faustine Marando<br>Reg No:COM/0095/25</p> 
-<p style="color: aqua;">Welcome user, tis is a helpful page</p>
-<ul>
-    <li>Student name</li>
-    <li>Present/Absent</li>
-    <li>Attendance %</li>
-    <li>Total stundents</li>
-    <li>Mean marks</li>
-</ul>
-<p>!DOCTYPE declares your document to beofhtml on your brouser</p>
-<p>The difference between the had tag and the bodytag is that the head tag carries the meta data and titles of your html document while the body tag holds the entire body of yourhtml doc </p>
-<p>The viewspo meta tag is imortat for mobile apps for your web page to be able be viewed on a obie screen</p>
-<p>If you removethe title elmentyour web page will not have a title</p>
-</body> 
-</html> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Online Attendance Management System</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <img src="images/KIbabii-Logo.png" alt="Kibabii University Logo">
+        <h1>Attendance Management System</h1>
+        <p>Welcome to the school attendance management system. Mark and track student attendance online.</p>
+        <nav aria-label="Main navigation">
+            <a href="index.html" aria-current="page">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h2>Welcome</h2>
+            <p>Hello, I am Faustine Marando. Reg No: COM/0095/25.</p>
+            <p class="notice">Welcome, user. This is a helpful page.</p>
+
+            <section aria-labelledby="attendance-details">
+                <h2 id="attendance-details">Attendance overview</h2>
+                <ul>
+                    <li>Student name</li>
+                    <li>Present or absent</li>
+                    <li>Attendance percentage</li>
+                    <li>Total students</li>
+                    <li>Mean marks</li>
+                </ul>
+            </section>
+        </article>
+
+        <aside aria-label="HTML learning notes">
+            <h2>HTML basics</h2>
+            <p>The doctype declaration tells the browser that the document uses HTML.</p>
+            <p>The head contains metadata and the document title, while the body contains the page content.</p>
+            <p>The viewport meta tag helps a web page display correctly on mobile screens.</p>
+            <p>The title element provides the page title shown in the browser.</p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Attendance Management System by Faustine Marando</p>
+    </footer>
+</body>
+</html>
