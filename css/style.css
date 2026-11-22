@@ -315,6 +315,24 @@ footer p {
     main {
         grid-template-columns: minmax(0, 1fr);
     }
+    .mapGo{
+        padding-top: 30px;
+
+    }
+    #maps{
+        background-color: white;
+        display : flex;
+        flex-direction:column;
+        justify-content: center;
+        padding-top: 30px;
+        border-radius: 2px;
+        padding-left:0px;
+        padding-right: 0px;
+    }
+    #maps p{
+        color:black;
+        font-size:2em;
+    }
 
     main > section,
     main > article,
